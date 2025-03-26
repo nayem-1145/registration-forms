@@ -68,6 +68,8 @@ $(document).ready(function () {
           return !this.value.trim(); // Check if the field is empty
       });
 
+      console.log(emptyFields.length);
+
       if (emptyFields.length === 0) {
           $(".next.btn").removeAttr("disabled");
       } else {
